@@ -67,7 +67,7 @@ function pamiFourthBlue() {
     movers.forward();
     pause(500);
     movers.turnRight();
-    pause(450);
+    pause(550);
     movers.forward();
     pause(1500);
     movers.stop();
@@ -81,7 +81,7 @@ function pamiOneBlue() {
     movers.forward();
     pause(300);
     movers.turnRight();
-    pause(450);
+    pause(475);
     movers.forward();
     pause(2100);
     movers.stop();
@@ -102,7 +102,7 @@ function runServo() {
 }
 
 pins.setPull(SWITCH_COLOR, PinPullMode.PullUp);
-pause((CURRENT_PAMI === 4)? 86000: 85000);
+pause((CURRENT_PAMI === 4)? 87000: 85000);
 SERVO.setAngle(90);
 if (pins.digitalReadPin(SWITCH_COLOR) == Color.Yellow) {
     if (CURRENT_PAMI === 4) {
